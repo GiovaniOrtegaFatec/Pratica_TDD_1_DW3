@@ -1,6 +1,6 @@
-# Desenvolvimento Web 3
+# Prática TDD
 
-Desafio técnico para os alunos da disciplina "Desenvolvimento Web 3"
+Desafio técnico para os alunos da disciplina "Desenvolvimento Web 3" e "Qualidade e Teste de Software"
 
 
 ```console
