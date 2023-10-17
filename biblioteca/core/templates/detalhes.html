@@ -1,0 +1,35 @@
+{% load static %}
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="author" content="Orlando Saraiva do Nascimento Júnior">
+        <link rel="stylesheet" href="{% static '/css/style.css' %}">
+        <title>Biblioteca</title>
+    </head>
+    <body>
+        <br>
+            <h1> Biblioteca </h1>
+        <br>
+
+        {% if livro %}
+            <h2> Detalhes de um livro selecionado </h2>
+            <h3>
+                Livro :  {{ livro.titulo }}
+                <br><br>
+                Editora : {{ livro.editora }}
+            </h3>
+        <br><br>
+        {% else %}
+            <h2> Nenhum livro cadastrado </h2>      
+        {% endif %} 
+
+        <center>
+            <form action={% url 'core:listar' %} novalidate method="GET">
+                <input type="submit" value="Voltar"/>              
+            </form>
+        </center>
+    </body>
+
+</html>

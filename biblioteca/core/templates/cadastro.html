@@ -1,0 +1,46 @@
+{% load static %}
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="author" content="Orlando Saraiva do Nascimento Júnior">
+        <link rel="stylesheet" href="{% static '/css/style.css' %}">
+        <title>Biblioteca</title>
+    </head>
+    <body>
+        <br>
+            <h1> Biblioteca </h1>
+            <h2> Cadastro de Livros </h2>
+        <br>
+
+        <form action={% url 'core:cadastro' %} novalidate method="POST" enctype="multipart/form-data">
+            {% csrf_token %}
+            <h3>
+                {{ formulario_livro.titulo.label }} : {{ formulario_livro.titulo }}
+            </h3>
+            <br>
+            <h3>
+                {{ formulario_livro.editora.label }}: {{ formulario_livro.editora }}
+            </h3>
+            <br><br>
+            <center>
+                <input type="submit" value="Cadastrar"/>
+            </center>
+        </form>
+        {% if formulario_livro.errors %}
+            {% for field in formulario_livro %}
+                {% for error in field.errors %}
+                    <strong>{{ error|escape }}</strong><br>
+                {% endfor %}
+            {% endfor %}
+        {% endif %}
+
+        <center>
+            <form action={% url 'core:index' %} novalidate method="GET">
+                <input type="submit" value="Voltar"/>              
+            </form>
+        </center>
+    </body>
+
+</html>
