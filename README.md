@@ -2,6 +2,7 @@
 
 Desafio técnico para os alunos da disciplina "Desenvolvimento Web 3" e "Qualidade e Teste de Software"
 
+No ambiente Linux:
 
 ```console
 git clone https://github.com/orlandosaraivajr/Pratica_TDD_1.git
@@ -15,6 +16,27 @@ python manage.py test
 coverage run --source='.' manage.py test 
 coverage html
 python manage.py runserver
+```
+
+No ambiente Windows:
+
+```console
+git clone https://github.com/orlandosaraivajr/Pratica_TDD_1.git
+cd Pratica_TDD_1/
+virtualenv venv
+cd venv
+cd scripts
+activate.bat
+cd ..
+cd ..
+pip install -r requirements.txt
+cd biblioteca/
+python manage.py migrate
+python manage.py test
+coverage run --source='.' manage.py test 
+coverage html
+python manage.py runserver
+
 ```
 
 ### Requisitos da Sprint 1
