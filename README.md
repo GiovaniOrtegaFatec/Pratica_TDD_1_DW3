@@ -2,6 +2,9 @@
 
 Desafio técnico para os alunos da disciplina "Desenvolvimento Web 3" e "Qualidade e Teste de Software"
 
+
+[O que eu devo fazer ?](https://youtu.be/ywayPV7Y648)
+
 No ambiente Linux:
 
 ```console
@@ -82,7 +85,7 @@ Atualmente, espera-se ter pelo menos 10 caracteres.
 
 + Autor: Validar a string para cadastro com pelo menos 10 caracteres.
 
-+ ISBN: : Validar a string para cadastro com exatos 13 caracteres e todos numéricos.
++ ISBN: Validar a string para cadastro com exatos 13 caracteres e todos numéricos.
 
 + Número de Páginas: Validar a string para cadastro entre 1 e 3 caracteres e todos numéricos.
 
