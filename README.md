@@ -20,7 +20,7 @@ python manage.py runserver
 ### Requisitos da Sprint 1
 
 O projeto apresenta um cadastro de livros. Na rota raiz (/), se apresenta dois botões, conforme imagem abaixo:
-<img src="rota_raiz.png">
+<img src="img/rota_raiz.png">
 
 Ao acessar a rota cadastro (/cadastro), é possível cadastrar o livro, que armazena as seguintes informações:
 
