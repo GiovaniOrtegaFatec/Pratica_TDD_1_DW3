@@ -16,7 +16,11 @@ class Migration(migrations.Migration):
             fields=[
                 ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
                 ('titulo', models.CharField(max_length=200, verbose_name='Título')),
-                ('editora', models.CharField(max_length=200, verbose_name='editora')),
+                ('editora', models.CharField(max_length=200, verbose_name='Editora')),
+                ('autor', models.CharField(max_length=200, verbose_name='Autor')),
+                ('isbn', models.CharField(max_length=13, verbose_name='ISBN')),
+                ('num_pagina', models.CharField(max_length=3, verbose_name='Número de páginas')),
+                ('ano_livro', models.CharField(max_length=200, verbose_name='Ano do livro')),
             ],
         ),
     ]
