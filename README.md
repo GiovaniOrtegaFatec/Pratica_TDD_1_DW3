@@ -25,4 +25,6 @@ python manage.py runserver
 
 ```
 
+<img src="img/coverage.png">
+Coverage Report: 97%
 
